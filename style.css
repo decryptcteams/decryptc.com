@@ -763,14 +763,31 @@ section {
         font-size: 1.5rem;
     }
 
+    .site-header,
+    .site-header.scrolled {
+        top: 0;
+        width: 100%;
+        transform: none;
+        left: 0;
+    }
+
+    .dark-theme .main-nav {
+        background: #000000;
+    }
+
     .header-container {
-        padding: 0.5rem 1.5rem;
-        border-radius: 40px;
+        padding: 1.2rem 1.5rem;
+        border-radius: 0;
+        background: transparent;
+        backdrop-filter: none;
+        border: none;
+        box-shadow: none;
     }
 
     .mobile-menu-btn {
         display: flex;
         z-index: 1001;
+        padding: 0.5rem;
     }
 
     .mobile-menu-btn.open span:nth-child(1) {
@@ -909,7 +926,11 @@ section {
 
     .footer-col-logo {
         grid-column: 1 / -1;
-        text-align: left;
+        text-align: center;
+    }
+
+    .footer-col-logo .logo {
+        justify-content: center;
     }
 
     .footer-col-newsletter {
@@ -1081,18 +1102,16 @@ section {
 
     /* Footer specifically for mobile */
     .footer-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        /* Keep 2 columns for "left and right" layout */
-        text-align: left;
-        /* Align text left as per standard or user preference */
+        grid-template-columns: 1fr !important;
+        text-align: center;
         gap: 2rem !important;
     }
 
-    /* Reset link lists to vertical if they were forced horizontal before */
+    /* Reset link lists to center */
     .footer-links {
         flex-direction: column !important;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         gap: 0.8rem !important;
     }
 
