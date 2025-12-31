@@ -809,6 +809,7 @@ section {
     /* Force Grid Stacking */
     .grid-2-col,
     .grid-3-col,
+    .work-grid,
     .footer-container {
         grid-template-columns: 1fr !important;
         gap: 2rem !important;
@@ -853,6 +854,25 @@ section {
         justify-content: center;
     }
 
+    footer .footer-col-logo {
+        text-align: center;
+    }
+
+    footer .footer-col-logo p {
+        margin: 1rem auto 0;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    .footer-col-links {
+        text-align: center;
+    }
+
+    .footer-col-links ul {
+        padding: 0;
+        text-align: center;
+    }
+
     footer form {
         flex-direction: column;
         align-items: center;
@@ -862,9 +882,21 @@ section {
         justify-content: center;
     }
 
+    .work-card {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
     .footer-links-group {
         flex-direction: column;
         gap: 1.5rem !important;
+        width: 100%;
+        justify-content: center;
     }
 
     .footer-legal {
@@ -921,7 +953,7 @@ section {
 @media (max-width: 900px) {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr) !important;
-        gap: 2rem !important;
+        gap: 3rem 1.5rem !important;
     }
 
     .footer-col-logo {
@@ -935,6 +967,7 @@ section {
 
     .footer-col-newsletter {
         grid-column: 1 / -1;
+        text-align: center;
     }
 }
 
@@ -1102,30 +1135,90 @@ section {
 
     /* Footer specifically for mobile */
     .footer-grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
         text-align: center;
-        gap: 2rem !important;
+        gap: 2.5rem 1rem !important;
+        padding: 0 1rem;
     }
 
-    /* Reset link lists to center */
-    .footer-links {
-        flex-direction: column !important;
+    .footer-col-logo {
+        grid-column: 1 / span 2;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-col-logo .logo {
         justify-content: center;
-        align-items: center;
-        gap: 0.8rem !important;
     }
 
-    .footer-heading {
-        margin-bottom: 0.8rem;
-    }
-
-    /* Make bottom bar horizontal */
-    .footer-bottom {
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 1rem;
+    .footer-col-logo p {
+        margin-top: 1rem !important;
         text-align: center;
+        max-width: 100%;
+    }
+
+    .footer-col-links h4 {
+        margin-bottom: 1.2rem;
+        font-size: 1.1rem;
+        color: var(--text-main);
+        text-align: center;
+    }
+
+    .footer-col-links ul {
+        padding-left: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    .footer-col-newsletter {
+        grid-column: 1 / span 2;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .footer-social {
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+    /* Make bottom bar centered */
+    .footer-bottom {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .footer-legal {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .footer-links-group {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Center Work Cards in Mobile */
+    .work-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
+    }
+
+    .work-card {
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .work-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .work-img {
+        height: 200px;
     }
 }
 
