@@ -181,7 +181,10 @@ function initThemeToggle() {
 
     // Check saved theme
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
+    if (savedTheme === 'light') {
+        document.body.classList.remove('dark-theme');
+    } else {
+        // Default or explicitly dark
         document.body.classList.add('dark-theme');
     }
 }
