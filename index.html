@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECRYPTC | Premium Industrial & Tech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <canvas id="cyberCanvas"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo2.png" alt="DECRYPTC Logo" class="logo-light">
+                <img src="assets/logo.png" alt="DECRYPTC Logo" class="logo-dark">
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="work.html" class="nav-link">Our Work</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-utils">
+                <button class="theme-toggle" aria-label="Toggle Theme">🌓</button>
+                <a href="contact.html" class="btn btn-outline">Quote</a>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="home">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-content">
+                <h1 class="hero-title reveal-on-scroll">
+                    Digital <span class="highlight">Protection</span>
+                </h1>
+                <h1 class="hero-title hacker-text reveal-on-scroll" data-value="NEXT-GEN">NEXT-GEN
+                </h1>
+                <p class="hero-subtitle reveal-on-scroll">
+                    Securing Digital Brands from Piracy,<br>Counterfeits & Cyber Threats.
+                </p>
+                <div class="hero-buttons reveal-on-scroll">
+                    <a href="#products" class="btn btn-primary">Our Products</a>
+                    <a href="#contact" class="btn btn-outline">Quote</a>
+                </div>
+            </div>
+            <!-- Product Mockup Image would go here -->
+            <div class="hero-visual container reveal-on-scroll">
+                <div class="mockup-img-container glass-mockup-wrap">
+                    <div class="tilt-container">
+                        <img src="assets/premium_mockup.png" alt="Premium 3D Product Mockup" class="premium-mockup-img">
+                        <div class="mockup-shimmer"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted By Section -->
+        <section class="trusted-section reveal-on-scroll">
+            <div class="container">
+                <p class="section-label">Trusted by Industry Leaders</p>
+                <div class="logo-row" style="justify-content: center; gap: 6rem;">
+                    <div class="brand-logo-img"><img src="assets/brand_meteoric.png" alt="Meteoric Logo"></div>
+                    <div class="brand-logo-img"><img src="assets/brand_max.png" alt="Max Logo"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Showcase -->
+        <section id="products" class="product-showcase reveal-on-scroll">
+            <div class="container">
+                <h2>Our Signature Solutions</h2>
+                <div class="grid-3-col" style="margin-top: 4rem;">
+                    <div class="product-card">
+                        <div class="p-img"></div>
+                        <h3>Industrial Fasteners</h3>
+                        <p>High-tensile strength solutions for large-scale construction.</p>
+                        <a href="#" class="btn-link">Explore →</a>
+                    </div>
+                    <div class="product-card">
+                        <div class="p-img"></div>
+                        <h3>Precision Tools</h3>
+                        <p>Specialized equipment for engineering and metal fabrication.</p>
+                        <a href="#" class="btn-link">Explore →</a>
+                    </div>
+                    <div class="product-card">
+                        <div class="p-img"></div>
+                        <h3>Structural Hardware</h3>
+                        <p>Essential components for modern architecture and design.</p>
+                        <a href="#" class="btn-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Grid -->
+        <section class="features-grid container reveal-on-scroll">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 1rem;">⚙️</div>
+                    <h4>Precision Engineered</h4>
+                    <p>Every component is tested to exceed industry standards for safety and performance.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 1rem;">🏢</div>
+                    <h4>Enterprise Grade</h4>
+                    <p>Designed for large-scale commercial and industrial applications.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 1rem;">⚡</div>
+                    <h4>Global Logistics</h4>
+                    <p>Rapid shipping and supply chain support across 50+ countries.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FAQ Section -->
+        <section class="reveal-on-scroll">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center;">Common Questions</h2>
+                <div class="faq-accordion">
+                    <details class="faq-item">
+                        <summary class="faq-summary">
+                            What is the typical lead time for custom orders?
+                            <span class="highlight">+</span>
+                        </summary>
+                        <div class="faq-content">
+                            Lead times vary based on complexity, but most custom structural components are ready for
+                            shipping within 10-14 business days.
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-summary">
+                            Do you provide international shipping for large quantities?
+                            <span class="highlight">+</span>
+                        </summary>
+                        <div class="faq-content">
+                            Yes, we have a robust global logistics network that handles bulk shipments across more than
+                            50 countries with full tracking.
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-summary">
+                            Are your products certified for safety standards?
+                            <span class="highlight">+</span>
+                        </summary>
+                        <div class="faq-content">
+                            Absolutely. All DECRYPTC products are rigorously tested and certified to meet or exceed
+                            international safety and quality standards.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="reveal-on-scroll cta-section-enhanced">
+            <div class="container">
+                <h2 class="cta-title-enhanced">Build your future with DECRYPTC</h2>
+                <a href="#contact" class="btn btn-primary btn-lg cta-btn-enhanced">Request a Consultation</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section reveal-on-scroll">
+            <div class="container grid-2-col">
+                <div>
+                    <h2>Ready to start your next project?</h2>
+                    <p>Contact our expert team today for a custom consultation and enterprise pricing.</p>
+                    <div style="margin-top: 3rem;">
+                        <div class="contact-card">
+                            <h4>📍 HQ Address</h4>
+                            <p>123 Industrial Way, Suite 500, Tech City</p>
+                        </div>
+                        <div class="contact-card">
+                            <h4>📧 Email Us</h4>
+                            <p>solutions@decryptc.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form-container card-shadow-md">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" placeholder="John Doe" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Work Email</label>
+                        <input type="email" placeholder="john@company.com" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea rows="4" placeholder="Tell us about your requirements..."
+                            class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col-logo">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo2.png" alt="DECRYPTC Logo" class="logo-light">
+                    <img src="assets/logo.png" alt="DECRYPTC Logo" class="logo-dark">
+                </a>
+                <p style="margin-top: 1.5rem;">Superior hardware solutions for the next generation of industrial
+                    innovation.</p>
+            </div>
+            <div class="footer-col-links">
+                <h4>Ecosystem</h4>
+                <ul style="list-style: none; margin-top: 1rem; line-height: 2;">
+                    <li><a href="index.html" style="text-decoration: none; color: var(--text-muted);">Home</a></li>
+                    <li><a href="services.html" style="text-decoration: none; color: var(--text-muted);">Services</a>
+                    </li>
+                    <li><a href="work.html" style="text-decoration: none; color: var(--text-muted);">Our Work</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-links">
+                <h4>Company</h4>
+                <ul style="list-style: none; margin-top: 1rem; line-height: 2;">
+                    <li><a href="about.html" style="text-decoration: none; color: var(--text-muted);">About Us</a></li>
+                    <li><a href="contact.html" style="text-decoration: none; color: var(--text-muted);">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-newsletter">
+                <h4>Social Media</h4>
+                <div class="footer-social">
+                    <a href="#" class="social-link" title="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="social-link" title="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="mailto:solutions@decryptc.com" class="social-link" title="Email"><i
+                            data-lucide="mail"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2025 DECRYPTC. All rights reserved.</p>
+            <div class="footer-links-group">
+                <div class="footer-legal">
+                    <a href="#" style="text-decoration: none; color: var(--text-muted);">Privacy</a>
+                    <a href="#" style="text-decoration: none; color: var(--text-muted);">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
